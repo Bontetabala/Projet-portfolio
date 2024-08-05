@@ -1,0 +1,328 @@
+/*Ce document HTML est la page du css*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    font-family: "Inter";
+    
+}
+
+header ul li{
+    margin: 0 15%;
+    list-style: none;
+    padding: 0 5%;
+    display: inline-block;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+   }
+
+   h2 {
+    display: flex;
+    justify-content:space-between;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin: 6% 12%;
+}
+
+h3 {
+    display: flex;
+    justify-content:space-between; 
+    font-size: 1.5em;
+    margin: 0% 12%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+hr {
+    height: 2px;
+    width: 80%;
+    margin-left: 12%;
+    margin-right: 10%;
+    background-color: rgb(229, 228, 228);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+    /*============================================== HAUT DE PAGE ============================================*/
+.header_nav {
+    display: flex;
+    justify-content:space-between;
+    padding-right: 6%;
+    padding-left: 6%;
+    padding-bottom: 12%;
+}
+
+.header_ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.barre {
+    border-right: 1.5px solid black;
+    padding: 0% 10%;
+    margin-right: 8%;
+}
+
+.logo {
+    margin: 2% 3%;
+}
+/*============================================ PARTIE BODY ===============================================*/
+.img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    top: 273%;
+    left: 30%;
+    gap: 0px;
+
+}
+
+.img_ronde {
+    padding: 15% 6%;
+    margin: 5% 6%;
+    
+}
+.container-index {
+    display: flex;
+    color: black;
+    font-size: 20px;
+    margin-left: 20%;
+    line-height: 35.5px;
+    padding-right: 7%;
+    padding-bottom: 12%;
+
+}
+
+
+.h4-index {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.pg-index {
+    
+    text-align: left;
+    font-size: 16px;
+    padding-bottom: 7%;
+    padding-left: 5%;
+    margin-right: 5%;
+    
+}
+
+span {
+    font-family: Inter;
+    font-size: 96%;
+    font-weight: 700;
+    line-height: 35.5px;
+    text-align: left;
+
+}
+
+.red-ronde {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background-color: rgb(213, 1, 1);
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 15px;
+font-weight: bold;
+gap: 10px;
+border: 1px solid black;
+}
+
+.bleu-ronde {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background-color: #80D8DA;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 15px;
+font-weight: bold;
+gap: 10px;
+border: 1px solid black;
+}
+
+.yellow-ronde {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background-color: #f1a605;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 15px;
+font-weight: bold;
+gap: 10px;
+border: 1px solid black;
+}
+
+.ronde {
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+   
+}
+
+     /*=========================================== BAS DE LA PAGE =========================================*/
+
+.bas-de-page {
+    display: flex;
+    justify-content:space-between;
+    font-size: small;
+   
+}
+
+.Trait-du-bas {
+    height: 2px;
+    width: 80%;
+    margin-left: 12%;
+    margin-right: 10%;
+    background-color: rgb(229, 228, 228);
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.p-icons {
+    margin: 0 3%;
+    padding: 1%;
+    font-size: 1rem
+}
+
+.copyright {
+    font-size: 100%;
+}
+
+       /*============================================ Media only ============================================*/
+@media only screen and (min-width: 150px) and (max-width: 600px) {
+    .screen {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: -50px;
+            text-align: center;
+        }
+
+    .Trait-du-bas{
+            justify-content: center;
+            align-items: center;
+            width: -50px;
+            text-align: center;
+    }
+    
+    }
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+        .screen {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+@media only screen and (min-width: 993px) and (max-width: 1499px) {
+        .screen {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    /*============================================= PARTIE CV =============================================*/
+.p-cv {
+    display: flex;
+    justify-content:space-between;
+    margin: 0% 12%;
+    padding-bottom: 3%;
+}
+
+.div-cv {
+    display: flex;
+    font-size: 1em;
+    margin: 0% 12%;
+    text-align: justify;
+}
+
+.ul-cv {
+    text-align:left;
+    color: black;
+    margin: 1% 25% 2% 10%;
+    font-size: 15px;
+    
+}
+
+.line {
+    border-top: 2px solid rgb(229, 228, 228);;
+    justify-content:space-between;
+    font-size: small;
+    margin-right: 7%;
+    margin-left: 5%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+/*================================================ PARTIE PROJET ============================================*/
+.pr-projet{
+    justify-content: space-between;
+    display: flex;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-right: 7%;
+    margin-left: 5%;
+    
+}
+
+.div-projet {
+    margin-left: 11%;
+    margin-right: 3%;
+    padding-left: 1%;
+}
+
+.img-projet {
+    border: black;
+}
+
+/*================================================ FORMULAIRE ===============================================*/
+.form {
+justify-content: space-between;
+display: flex;
+gap: 15%;
+margin-left: 20%;
+margin-right: 19%;
+padding-left: 5%;
+}
+
+.form1 {
+    display: flex;
+    height: 25%;
+   
+}
+
+.form-space {
+    margin-right: 7%;
+}
+
+.frm {
+    width: 150px;
+    height: 16px;
+    padding: 20px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f1a605;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    gap: 10px;
+    border: 1px
+    }
