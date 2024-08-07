@@ -2,17 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-body {
+body{
     font-family: "Inter";
-    
-}
-
-header ul li{
-    margin: 0 15%;
-    list-style: none;
-    padding: 0 5%;
-    display: inline-block;
-    
 }
 
 a {
@@ -20,22 +11,6 @@ a {
     color: black;
    }
 
-   h2 {
-    display: flex;
-    justify-content:space-between;
-    font-size: 1.5em;
-    font-weight: 900;
-    margin: 6% 12%;
-}
-
-h3 {
-    display: flex;
-    justify-content:space-between; 
-    font-size: 1.5em;
-    margin: 0% 12%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
 
 hr {
     height: 2px;
@@ -48,31 +23,54 @@ hr {
 }
 
     /*============================================== HAUT DE PAGE ============================================*/
-.header_nav {
+    header ul li {
+        margin: 0 15%;
+        list-style: none;
+        padding: 0 5%;
+        display: inline-block;
+        
+    }
+    .header {
+        padding: 2% 2%;
+    }
+    
+    .header_nav {
     display: flex;
     justify-content:space-between;
-    padding-right: 6%;
-    padding-left: 6%;
-    padding-bottom: 12%;
-}
+    }
 
-.header_ul {
+.header_list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.barre {
+.header_item {
     border-right: 1.5px solid black;
     padding: 0% 10%;
     margin-right: 8%;
 }
 
-.logo {
+.header_logo {
     margin: 2% 3%;
 }
 /*============================================ PARTIE BODY ===============================================*/
-.img {
+.main {
+    font-family: "Inter";
+    margin-left: 5%;
+    margin-right: 10%;
+    
+}
+
+.main_title {
+    display: flex;
+    justify-content:space-between;
+    font-size: 1.5em;
+    font-weight: 900;
+    margin-left: 5%;
+    
+}
+.container_image-img {
     border-radius: 50%;
     width: 350px;
     height: 350px;
@@ -82,12 +80,12 @@ hr {
 
 }
 
-.img_ronde {
+.container_image {
     padding: 15% 6%;
     margin: 5% 6%;
     
 }
-.container-index {
+.main_container {
     display: flex;
     color: black;
     font-size: 20px;
@@ -99,12 +97,12 @@ hr {
 }
 
 
-.h4-index {
+.container_description-title {
     font-size: 1.5em;
     font-weight: 900;
 }
 
-.pg-index {
+.container_description {
     
     text-align: left;
     font-size: 16px;
@@ -114,8 +112,8 @@ hr {
     
 }
 
-span {
-    font-family: Inter;
+.main__container-description-highlight {
+    font-family: "Inter";
     font-size: 96%;
     font-weight: 700;
     line-height: 35.5px;
@@ -123,7 +121,7 @@ span {
 
 }
 
-.red-ronde {
+.main__container-round--red {
 width: 100px;
 height: 100px;
 border-radius: 50%;
@@ -137,7 +135,7 @@ gap: 10px;
 border: 1px solid black;
 }
 
-.bleu-ronde {
+.main__container-round--blue {
 width: 100px;
 height: 100px;
 border-radius: 50%;
@@ -151,7 +149,7 @@ gap: 10px;
 border: 1px solid black;
 }
 
-.yellow-ronde {
+.main__container-round--yellow {
 width: 100px;
 height: 100px;
 border-radius: 50%;
@@ -165,7 +163,7 @@ gap: 10px;
 border: 1px solid black;
 }
 
-.ronde {
+.main__container-round {
     display: flex;
     justify-content: space-evenly;
     align-items:center;
@@ -173,31 +171,30 @@ border: 1px solid black;
 }
 
      /*=========================================== BAS DE LA PAGE =========================================*/
+    .footer {
+        display: flex;
+        font: size 10%;
+    }
 
-.bas-de-page {
-    display: flex;
-    justify-content:space-between;
-    font-size: small;
-   
-}
 
-.Trait-du-bas {
+.footer_contact-info {
     height: 2px;
     width: 80%;
     margin-left: 12%;
-    margin-right: 10%;
+    margin-right: 12%;
     background-color: rgb(229, 228, 228);
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content:space-between;
 }
 
-.p-icons {
+.footer_icons {
     margin: 0 3%;
     padding: 1%;
     font-size: 1rem
 }
 
-.copyright {
+.footer__copyright {
     font-size: 100%;
 }
 
@@ -235,21 +232,26 @@ border: 1px solid black;
     }
 
     /*============================================= PARTIE CV =============================================*/
-.p-cv {
+.experience{
+    font-size: 20px;
+    padding-left: 10%;
+}
+
+.experience_title {
     display: flex;
     justify-content:space-between;
     margin: 0% 12%;
     padding-bottom: 3%;
 }
 
-.div-cv {
+.experience__description {
     display: flex;
     font-size: 1em;
     margin: 0% 12%;
     text-align: justify;
 }
 
-.ul-cv {
+.experience_list{
     text-align:left;
     color: black;
     margin: 1% 25% 2% 10%;
@@ -267,53 +269,63 @@ border: 1px solid black;
     padding-top: 3%;
 }
 /*================================================ PARTIE PROJET ============================================*/
-.pr-projet{
-    justify-content: space-between;
+.main_projet{
     display: flex;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    margin-right: 7%;
-    margin-left: 5%;
+}
+
+.projet_description {
+    justify-content: center;
     
 }
 
-.div-projet {
-    margin-left: 11%;
-    margin-right: 3%;
-    padding-left: 1%;
+.projet_image {
+    margin-left: 50px;
+    margin-bottom: 12%;
+    
+    
+    
 }
 
-.img-projet {
-    border: black;
+.project__title {
+font-size: 30px;
+padding-left: 10%;
+}
+
+.project__text {
+    margin-left: 11%;
+    margin-right: 3%;
+    
 }
 
 /*================================================ FORMULAIRE ===============================================*/
-.form {
+.main_form {
 justify-content: space-between;
 display: flex;
 gap: 15%;
-margin-left: 20%;
-margin-right: 19%;
-padding-left: 5%;
 }
 
-.form1 {
+.form_info {
+    margin-left: 18%;
+    margin-right: 13%;
+     
+}
+
+.form_contact {
     display: flex;
     height: 25%;
-   
 }
 
-.form-space {
-    margin-right: 7%;
+.form_contact-space {
+    margin-right: 5%;
 }
 
-.frm {
+.form_textarea {
     width: 150px;
     height: 16px;
     padding: 20px;
 }
 
-button {
+.form_button {
     width: 100px;
     height: 100px;
     border-radius: 50%;
