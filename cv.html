@@ -9,108 +9,123 @@
         <title>Bonte TABALA</title>
     </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="header_nav screen">
-            <div class="logo"><h1><a href="index.html">Bonte TABALA</a></h1></div>
-            <ul class="header_ul">
-                <li class="barre"><a href="cv.html">CV</a></li>
-                <li class="barre"><a href="projet.html">Projets</a></li>
+            <div class="header_logo">
+                <h1>
+                    <a href="index.html">Bonte TABALA</a>
+                </h1>
+            </div>
+            <ul class="header_list">
+                <li class="header_item"><a href="cv.html">CV</a></li>
+                <li class="header_item"><a href="projet.html">Projets</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <div>
-            <h2>Curriculum vitae</h2>
+    <main class="main">
+        <div class="main_title">
+            <h2 class="main_title-h2">Curriculum vitae</h2>
         </div>
 
         <section>
-            <div>
+            <div class="experience">
                 <h3>Expérience Professionnelle</h3>
             </div>
 
             <div>
-                <div class="p-cv">
+                <div class="experience_title">
                 <P ><b>Développeur back-end PHP et NodeJS </b> <br> Sopra Steria - Paris</P>
                 <p>Février 2018 - Présent</p> 
                 </div>
-                <div>
-                    <p class="div-cv">Au sein d'une équipe constituée d'un chef de projet web, de développeurs, de Data Scientist 
+                <div class="experience__description">
+                    <p>Au sein d'une équipe constituée d'un chef de projet web, de développeurs, de Data Scientist 
                         et d'architectes DevOps, 
                         j'ai réalisé de nombreuses missions sur des projets clients dans le secteur de la défense :
                     </p>
-
-                        <ul  class="ul-cv">
-                            <li>Développement d'API PHP sur les frameworks Symfony et</li>
-                            <li>Laravel Intégration de requêtes SQL et ElasticSearch avancées</li>
-                            <li>Ajout de nouveaux endpoints sur une API Express.js avec des enjeux de cyber-sécurité
-                            Utilisation de services Amazon Web Services (AWS) sur NodeJS, pour déléguer le traitement de certaines tâches.</li>
-                        </ul>
-                </div>
+                </div>    
+                <div  class="experience_list">
+                    <ul>
+                        <li>Développement d'API PHP sur les frameworks Symfony et</li>
+                        <li>Laravel Intégration de requêtes SQL et ElasticSearch avancées</li>
+                        <li>Ajout de nouveaux endpoints sur une API Express.js avec des enjeux de cyber-sécurité
+                        Utilisation de services Amazon Web Services (AWS) sur NodeJS, pour déléguer le traitement de certaines tâches.</li>
+                    </ul>
+                </div>    
+                
             </div>
 
             <div>
-                <div class="p-cv">
+                <div class="experience_title">
                     <P><b>Développeur back-end Python</b><br>Thales - Grenoble</P>
                     <p>Juin 2018 - Janvier 2021</p>
                 </div>
-                <div>
-                    <p class="div-cv">Au sein d'une équipe de 5 développeurs et cloud architects, 
+                <div class="experience__description">
+                    <p>Au sein d'une équipe de 5 développeurs et cloud architects, 
                         j'ai développé certaines évolutions ainsi que des correctifs sur un projet interne développé en Python, 
                         destiné à la maintenance d'appareils aéronefs :
-                    </p>
-                    <ul class="ul-cv">
+                    </p>    
+                </div>
+                <div  class="experience_list">   
+                    
+                    <ul>
                         <li>Nouveaux endpoints sur une API GraphQL</li>
                         <li>Améliorations des performances de certaines fonctions de traitement en masse sur des documents NoSQL</li>
                         <li>Réalisation à temps et validation par les pairs de 96% des tâches qui m'ont été affectées durant les sprints.</li>
                     </ul>
-                </div>
+                </div> 
+                
             </div>
 
             <div>
-                <div class="p-cv">
+                <div class="experience_title">
                     <p><b>Développeur front-end ReactJS</b><br>Shifted - Paris</p>
                     <p>janvier 2018 - Mars 2018</p>
                 </div>
-                <div>
-                    <p class="div-cv">Encadré par des ingénieurs et intégrateurs front-end ainsi que des développeurs JavaScript,
+                <div class="experience__description">
+                    <p>Encadré par des ingénieurs et intégrateurs front-end ainsi que des développeurs JavaScript,
                          j'ai occupé plusieurs missions d'améliorations sur l'interface utilisateur :
-                    <ul class="ul-cv">
+                </div>    
+                <div class="experience_list">         
+                    <ul>
                         <li>Mise en place de tests unitaires automatisés</li>
                         <li>Amélioration et optimisation de composants ReactJS en TypeScript</li>
                         <li>Mise à jour de librairies et correctifs de compatibilité</li>
                     </ul>
                 </div>
+                
             </div>
         </section>
+        <div class="section"></div>
         <section>
-            <hr>
-        <div>
-            <h3>Etude Faites</h3>
+        <div class="experience">
+            <h3>Education</h3>
         </div>
 
         <div>
-            <div class="p-cv"><P><b>Diplôme d'ingénieur en informatique</b><br>EFREI - Paris</P>
+            <div class="experience_title"><P><b>Diplôme d'ingénieur en informatique</b><br>EFREI - Paris</P>
             <p>2016 - 2019</p>
             </div>
-            <div>
-                <p class="div-cv">Programmation informatique, spécialisation Data Scientist.</p>
-                <P class="div-cv">J'ai effectué 2 stages durant ma formation :</P>
-                <ul class="ul-cv">
+            <div class="experience__description">
+                <p>Programmation informatique, spécialisation Data Scientist.</p>
+                <P>J'ai effectué 2 stages durant ma formation :</P>
+            </div>
+            <div class="experience_list">
+                <ul>
                     <li>Développement de micro-services en NodeJS dans le secteur bancaire</li>
                     <li>Refonte du "Data Model" d'une application de suivi de livraisons chez un spécialiste de la logistique e-commerce</li>
                 </ul>
             </div>
         </div>
         </section>
+        <div class="section"></div>
         <section>
-            <hr>
-            <div>
+            <div class="experience">
                 <h3>Compétences et expertise</h3>
             </div>
-                <div >
-                    <ul class="ul-cv">
+                <div class="experience_list">
+                    <ul>
                         <li>Reverse engineering</li>
                         <li>Modélisation de données Bases de données relationnelles</li>
                         <li>Rédaction de cahiers des charges Spécifications fonctionnelles et techniques</li>
@@ -118,23 +133,24 @@
                     </ul>
                 </div>
         </section>
-
+        <div class="section"></div>
         <section>
-            <hr>
+            <div class="experience">
                 <h3>Langues</h3>
             </div>
-            <div>
-                <ul class="ul-cv">
+            <div class="experience_list">
+                <ul>
                     <li>Français Natif</li>
                     <li>Anglais Niveau C1, Vocabulaire technique, Stage de 6 mois au Royaume-Uni</li>
                     <li>Espagnol Capacité à entretenir une discussion informelle à l'oral, Équivalent B1</li>
                 </ul>
             </div>
+            <div class="space"></div>
         </section>
         
     </main>
-<footer>
-        <div class="Trait-du-bas bas-de-page screen">
+    <footer class="footer">
+        <div class="footer_contact-info screen">
            <div>
                <p><strong>Télephone</strong></p>
                <a href="tel:00243995608233">099-560-8233</a>
@@ -143,20 +159,20 @@
                <p><strong>Email</strong></p>
                <a href="mailto:bontetabala4@gmail.com">bontetabala4@gmail.com</a>
            </div>
-           <div>
+           <div >
                <p><strong>Suivez-moi</strong></p>
                <p >
-                   <a href="https://www.instagram.com/bontestabala"><i class="p_icons fab fa-instagram"></i></a>
-                   <a href="https://www.linkedin.com/in/bonte-tabala-28684b244/"><i class="p_icons fab fa-linkedin-in"></i></a>
-                   <a href="https://web.facebook.com/anderson.tabala"><i class="p_icons fab fa-facebook"></i></a>
+                   <a href="https://www.instagram.com/bontestabala"><i class="footer_icons fab fa-instagram"></i></a>
+                   <a href="https://www.linkedin.com/in/bonte-tabala-28684b244/"><i class="footer_icons fab fa-linkedin-in"></i></a>
+                   <a href="https://web.facebook.com/anderson.tabala"><i class="footer_icons fab fa-facebook"></i></a>
                    </p>
                </div>
-               <div class="copyright">
+               <div class="footer__copyright">
                    <p>
                        &copy; 2024 By Bonte TABALA
                    </p> 
                </div>
            </div>
-</footer>
+    </footer>
 </body>
 </html>

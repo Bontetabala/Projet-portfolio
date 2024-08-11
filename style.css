@@ -2,17 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-body {
+body{
     font-family: "Inter";
-    
-}
-
-header ul li{
-    margin: 0 15%;
-    list-style: none;
-    padding: 0 5%;
-    display: inline-block;
-    
 }
 
 a {
@@ -20,22 +11,6 @@ a {
     color: black;
    }
 
-   h2 {
-    display: flex;
-    justify-content:space-between;
-    font-size: 1.5em;
-    font-weight: 900;
-    margin: 6% 12%;
-}
-
-h3 {
-    display: flex;
-    justify-content:space-between; 
-    font-size: 1.5em;
-    margin: 0% 12%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-}
 
 hr {
     height: 2px;
@@ -48,82 +23,89 @@ hr {
 }
 
     /*============================================== HAUT DE PAGE ============================================*/
-.header_nav {
+    header ul li {
+        list-style: none;
+        display: inline-block;
+    }
+    .header {
+        margin-right: 7%;
+        padding-left: 2%;   
+    }
+    
+    .header_nav {
     display: flex;
     justify-content:space-between;
-    padding-right: 6%;
-    padding-left: 6%;
-    padding-bottom: 12%;
-}
+    
+    }
 
-.header_ul {
+.header_list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    
 }
 
-.barre {
+.header_item {
     border-right: 1.5px solid black;
-    padding: 0% 10%;
-    margin-right: 8%;
+    padding: 0% 12%;
+    margin-right: 3%;
 }
 
-.logo {
+.header_logo {
     margin: 2% 3%;
+    padding-left: 5%;
 }
 /*============================================ PARTIE BODY ===============================================*/
-.img {
-    border-radius: 50%;
-    width: 350px;
-    height: 350px;
-    top: 273%;
-    left: 30%;
-    gap: 0px;
-
+.main {
+    font-family: "Inter";
+    margin-left: 18%;
+    margin-right: 10%;
+    display: flex;
 }
 
-.img_ronde {
+.container_image-img {
+    border-radius: 100%;
+    width: 300px;
+    height: 350px;
+}
+
+.container_image {
     padding: 15% 6%;
     margin: 5% 6%;
     
 }
-.container-index {
+.main_container {
     display: flex;
     color: black;
-    font-size: 20px;
-    margin-left: 20%;
-    line-height: 35.5px;
-    padding-right: 7%;
-    padding-bottom: 12%;
-
+    
 }
 
 
-.h4-index {
-    font-size: 1.5em;
+.container_description-title {
+    font-size: 2.5em;
     font-weight: 900;
 }
 
-.pg-index {
-    
+.container_description {
     text-align: left;
     font-size: 16px;
     padding-bottom: 7%;
-    padding-left: 5%;
-    margin-right: 5%;
+    padding-left: 12%;
+    padding-right: 5%;
+    line-height: 35.5px;
     
 }
 
-span {
-    font-family: Inter;
-    font-size: 96%;
-    font-weight: 700;
+.main__container-description-highlight {
+    font-family: "Inter";
+    font-size: 1.3em;
+    font-weight: 800;
     line-height: 35.5px;
     text-align: left;
 
 }
 
-.red-ronde {
+.main__container-round--red {
 width: 100px;
 height: 100px;
 border-radius: 50%;
@@ -137,7 +119,7 @@ gap: 10px;
 border: 1px solid black;
 }
 
-.bleu-ronde {
+.main__container-round--blue {
 width: 100px;
 height: 100px;
 border-radius: 50%;
@@ -151,7 +133,7 @@ gap: 10px;
 border: 1px solid black;
 }
 
-.yellow-ronde {
+.main__container-round--yellow {
 width: 100px;
 height: 100px;
 border-radius: 50%;
@@ -165,91 +147,64 @@ gap: 10px;
 border: 1px solid black;
 }
 
-.ronde {
+.main__container-round {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items:center;
-   
+    padding-top: 12%;
 }
+
 
      /*=========================================== BAS DE LA PAGE =========================================*/
+    .footer {
+        display: flex;
+        font: size 10%;
+    }
 
-.bas-de-page {
-    display: flex;
-    justify-content:space-between;
-    font-size: small;
-   
-}
 
-.Trait-du-bas {
+.footer_contact-info {
     height: 2px;
-    width: 80%;
-    margin-left: 12%;
+    width: 90%;
+    margin-left: 15%;
     margin-right: 10%;
     background-color: rgb(229, 228, 228);
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content:space-between;
+    display: flex;
 }
 
-.p-icons {
+.footer_icons {
     margin: 0 3%;
     padding: 1%;
     font-size: 1rem
 }
 
-.copyright {
+.footer__copyright {
     font-size: 100%;
 }
 
-       /*============================================ Media only ============================================*/
-@media only screen and (min-width: 150px) and (max-width: 600px) {
-    .screen {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: -50px;
-            text-align: center;
-        }
-
-    .Trait-du-bas{
-            justify-content: center;
-            align-items: center;
-            width: -50px;
-            text-align: center;
-    }
-    
-    }
-
-@media only screen and (min-width: 601px) and (max-width: 992px) {
-        .screen {
-            display: flex;
-            flex-direction: row;
-        }
-    }
-
-@media only screen and (min-width: 993px) and (max-width: 1499px) {
-        .screen {
-            display: flex;
-            flex-direction: row;
-        }
-    }
-
     /*============================================= PARTIE CV =============================================*/
-.p-cv {
+.experience{
+    font-size: 20px;
+    padding-left: 12%;
+}
+
+.experience_title {
     display: flex;
     justify-content:space-between;
-    margin: 0% 12%;
+    padding-left: 12%;
     padding-bottom: 3%;
 }
 
-.div-cv {
+.experience__description {
     display: flex;
     font-size: 1em;
     margin: 0% 12%;
     text-align: justify;
 }
 
-.ul-cv {
+.experience_list{
     text-align:left;
     color: black;
     margin: 1% 25% 2% 10%;
@@ -257,63 +212,80 @@ border: 1px solid black;
     
 }
 
-.line {
-    border-top: 2px solid rgb(229, 228, 228);;
+.section {
+    height: 0.5px;
+    width: 88%;
+    margin-left: 12%;
+    margin-right: 10%;
+    background-color: rgb(8, 8, 8);
+    margin-top: 4%;
+    margin-bottom: 4%;
     justify-content:space-between;
-    font-size: small;
-    margin-right: 7%;
-    margin-left: 5%;
-    padding-bottom: 3%;
-    padding-top: 3%;
+}
+
+.space {
+    padding-bottom: 10%;
 }
 /*================================================ PARTIE PROJET ============================================*/
-.pr-projet{
-    justify-content: space-between;
+.main_projet{
     display: flex;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    margin-right: 7%;
-    margin-left: 5%;
+    padding-left: 5%;
+}
+
+.projet_description {
+    justify-content: center;
     
 }
 
-.div-projet {
-    margin-left: 11%;
-    margin-right: 3%;
-    padding-left: 1%;
-}
-
-.img-projet {
-    border: black;
-}
-
-/*================================================ FORMULAIRE ===============================================*/
-.form {
-justify-content: space-between;
-display: flex;
-gap: 15%;
-margin-left: 20%;
-margin-right: 19%;
-padding-left: 5%;
-}
-
-.form1 {
-    display: flex;
-    height: 25%;
+.projet_image {
+    width: 450px;
+    height: 350px;
+    padding-bottom: 20%;
+    padding-left: 10%;
+    
    
 }
 
-.form-space {
-    margin-right: 7%;
+.project__title {
+font-size: 30px;
+padding-left: 14%;
 }
 
-.frm {
+.project__text {
+    margin-left: 14%;
+    margin-right: 27%;
+    text-align: justify;
+}
+/*================================================ FORMULAIRE ===============================================*/
+.main_form {
+justify-content: space-between;
+display: flex;
+gap: 15%;
+padding: 0% 10%;
+}
+
+.form_info {
+    margin-left: 18%;
+    margin-right: 13%;
+     
+}
+
+.form_contact {
+    display: flex;
+    height: 25%;
+}
+
+.form_contact-space {
+    margin-right: 5%;
+}
+
+.form_textarea {
     width: 150px;
     height: 16px;
     padding: 20px;
 }
 
-button {
+.form_button {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -326,3 +298,88 @@ button {
     gap: 10px;
     border: 1px
     }
+
+
+    @media (max-width: 1024px) {  
+        .header_list {  
+            flex-direction: column;  
+            align-items: center;  
+        }  
+    
+        .main_container {  
+            flex-direction: column;  
+            align-items: center;  
+        }  
+    
+        .container_image-img {  
+            max-width: 80%;  
+        }  
+    
+        .footer_contact-info {  
+            flex-direction: column;  
+            align-items: center;  
+        }  
+    }  
+    
+    @media (min-width: 1024px) {  
+        .main_container {  
+            padding: 20px;  
+        }  
+    }  
+    
+    @media (max-width: 768px) {  
+        body {  
+            font-size: 14px;  
+        }  
+    
+        .container {  
+            padding: 20px;  
+        }  
+    
+        .header {  
+            font-size: 24px;  
+        }  
+    
+        .content {  
+            display: flex;  
+            flex-direction: column;  
+        }  
+        
+        .footer {  
+            text-align: center;  
+        }  
+    }  
+    
+    
+    @media (max-width: 480px) {  
+        body {  
+            font-size: 10px;  
+        }  
+
+        .container_description-title {  
+            font-size: 18px;  
+        }  
+    
+        .main_container-image img {  
+            max-width: 100%;  
+            height: auto; 
+        }  
+    
+        .footer_contact-info {  
+            display: flex;  
+            flex-direction: column;  
+        }  
+    
+        .footer__copyright {  
+            margin-top: 20px;  
+        }  
+
+        .header_nav {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header_item {  
+            margin: 5px 0;
+        }
+    }  
